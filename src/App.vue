@@ -2,25 +2,24 @@
   <v-app>
     <Navbar/>
     <v-content>
-      <Hello/>
+      <router-view></router-view>
     </v-content>
   </v-app>
 </template>
 
 <script>
-import Hello from './components/Hello'
-import Navbar from './components/Navbar'
 
-export default {
-  name: 'App',
-  components: {
-    Hello,
-    Navbar
-  },
-  data () {
-    return {
-      //
+  import Navbar from './views/Navbar'
+
+  export default {
+    name: 'App',
+    components: {
+      Navbar,
+    },
+    data () {
+      return {
+        //
+      }
     }
   }
-}
 </script>
