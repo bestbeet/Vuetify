@@ -7,16 +7,22 @@
                 <span class="font-weight-light">ProjectWeb</span>
             </v-toolbar-title>
             <v-spacer></v-spacer>
+            <v-btn
+                    flat
+                    href="#"
+                    target="_blank"
+            >
 
-            <v-icon>home</v-icon>
-                <span class="mr-2">HOME</span>
+                <v-icon left>home</v-icon>
+                    <span class="mr-2">HOME</span>
+            </v-btn>
 
             <v-btn
                     flat
-                    href="https://github.com/vuetifyjs/vuetify/releases/latest"
+                    href="https://www.facebook.com/best.bossun"
                     target="_blank"
             >
-                <span class="mr-2">Latest Release</span>
+                <span class="mr-2">Facebook</span>
             </v-btn>
         </v-toolbar>
         <v-navigation-drawer app v-model="drawer" class="black--text light-blue">
@@ -35,9 +41,7 @@
                         :key="item.title"
                         v-model="item.active"
                         :prepend-icon="item.action"
-
                         no-action
-
                         class="mt-3 mx-2"
                 >
                     <template v-slot:activator >
@@ -52,7 +56,7 @@
                             v-for="subItem in item.items"
                             :key="subItem.title"
                             router :to="subItem.route"
-                            @click=""
+                            @click=" "
                     >
                         <v-list-tile-content>
                             <v-list-tile-title>{{ subItem.title }}</v-list-tile-title>
