@@ -1,6 +1,6 @@
 <template>
   <v-container row wrap>
-    <h1 class="align-content-center display-3 font-weight-black red--text mt-5" >Contact</h1>
+    <h1 class="align-content-center display-3 font-weight-black red--text mt-5" >ABOUT ME</h1>
     <br>
     <v-layout class="align-start justify-start row wrap">
       <v-flex class="xs12 md6" >

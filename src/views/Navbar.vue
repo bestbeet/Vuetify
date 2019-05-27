@@ -9,7 +9,7 @@
             <v-spacer></v-spacer>
             <v-btn
                     flat
-                    href=""
+                    href="/"
             >
 
                 <v-icon left>home</v-icon>
@@ -82,20 +82,10 @@
                 lists: [
                     {icon:"home",text:"Home",route:"/"},
                     {icon:"folder_special",text:"Project",route:"/project"},
+                    {icon:"assignment_ind",text:"Portfolio",route:"/profile/portfolio"}
 
                 ],
                 items: [
-                    {
-                        action: 'assignment_ind',
-                        title: 'Profile',
-                        active: true,
-                        items: [
-                            { title: 'Information' , action: 'person' ,route:"/profile/information"},
-                            { title: 'Education' , action: 'school' ,route:"/profile/education" },
-                            { title: 'Skill' , action: '' , route:"/profile/skill"},
-                            { title: 'Contact' , action: 'contacts' ,  route:"/profile/contacts"}
-                        ]
-                    },
                     {
                         action: 'image',
                         title: 'Gallery',

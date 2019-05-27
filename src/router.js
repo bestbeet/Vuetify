@@ -2,19 +2,25 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
 import Information from './views/Information'
-import Contact from './views/Contact'
+import Contact from './components/Contact'
+import Skill from './components/Skill'
 import Project from './views/Project'
 import NSC from './views/NSC'
 import Carousel3d from 'vue-carousel-3d'
 import ACMICPC from './views/ACM-ICPC'
 import Apprentice from './views/Apprentice'
-import Skill from './views/Skill'
+import Education from './components/Experience'
+
+import Resume from './components/Resume'
+
 
 Vue.use(Router,Carousel3d);
+
 
 export default new Router({
   mode: 'history',
   base: process.env.BASE_URL,
+
   routes: [
     {
       path: '/',
@@ -22,19 +28,9 @@ export default new Router({
       component: Home
     },
     {
-      path: '/profile/information',
+      path: '/profile/portfolio',
       name: 'information',
       component: Information
-    },
-    {
-      path: '/profile/skill',
-      name: 'skill',
-      component: Skill
-    },
-    {
-      path: '/profile/contacts',
-      name: 'contact',
-      component: Contact
     },
     {
       path: '/project',
@@ -56,6 +52,8 @@ export default new Router({
       name: 'apprentice',
       component: Apprentice
     },
+  ],
 
-  ]
+
+
 })

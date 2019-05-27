@@ -1,7 +1,7 @@
 <template>
     <v-container>
-        <h1 class="display-3 red--text">Technology stack</h1>
-            <v-layout row class="pa-2">
+        <h1 class="display-3 red--text">Skill Programming</h1>
+            <v-layout row class="pa-3">
             </v-layout>
             <v-layout row wrap >
                 <v-flex d-flex xs12 sm6 md1 child-flex>

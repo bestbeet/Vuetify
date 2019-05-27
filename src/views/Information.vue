@@ -1,78 +1,29 @@
 <template>
     <v-container>
-        <v-layout row warp>
-            <v-flex>
-                <div id="prof">
-                    <h1 class="display-2"><b>Information</b></h1>
-                    <br>
-                    <p id="picture"></p>
-                    <table>
-                        <tbody>
-                        <tr>
-                            <th>Name : </th>
-                            <td>Nattawat  Thong-aram</td>
-                        </tr>
-                        <tr>
-                            <th>Age : </th>
-                            <td>24</td>
-                        </tr>
-                        <tr>
-                            <th>Birth : </th>
-                            <td>06 November 1995</td>
-                        </tr>
-                        <tr>
-                            <th>Address : </th>
-                            <td>62/3 M.4 Khao Khao , Thungsong , Nakhon Si Thammarat 80110 , Thailand </td>
-                        </tr>
-                        <tr>
-                            <th>GitHub : </th>
-                            <td><a href='https://github.com/bestbeet' target="_blank">@bestbeet</a></td>
-                        </tr>
-                        <tr>
-                            <th>Facebook : </th>
-                            <td><a href='https://www.facebook.com/best.bossun' target="_blank">@best.bossun</a></td>
-                        </tr>
-                        <tr>
-                            <th>Youtube : </th>
-                            <td><a href='https://www.youtube.com/channel/UCkM1aUHTMMbWCn7fyQz2WRA?view_as=subscriber' target="_blank">@bossun</a></td>
-                        </tr>
-                        <tr>
-                            <th>Medium : </th>
-                            <td><a href='https://medium.com/@bestbeet2538' target="_blank">@bestbeet2538</a></td>
-                        </tr>
-                        </tbody>
-                    </table>
-                    <p class="heading">What you want to do now.</p>
-                    <p class="eng">- Contribution to the world by utilizing technology -</p>
-                    <p class="eng">- I want to work with your company  -</p>
-                    <p class="heading">Strength</p>
-                    <div id="feature">
-                        <ul>
-
-                        </ul>
-                        <p class="heading">Things you can do casually</p>
-                        <ul>
-
-                        </ul>
-                        <p class="heading">What I'm doing recently.</p>
-                        <ul>
-
-                        </ul>
-                    </div>
-                </div>
-            </v-flex>
-        </v-layout>
-
+        <Resume>
+        </Resume>
+        <Experience>
+        </Experience>
+        <Skill>
+        </Skill>
+        <Contact>
+        </Contact>
     </v-container>
-
 </template>
 
 <script>
-
+    import Contact from '../components/Contact'
+    import Skill from '../components/Skill'
+    import Resume from '../components/Resume'
+    import Experience from '../components/Experience'
     export default {
-        name: 'Prof',
+        name: 'Information',
         title: ' ',
         components: {
+            Resume,
+            Skill,
+            Contact,
+            Experience,
         },
         data () {
             return {
