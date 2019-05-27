@@ -9,20 +9,19 @@
             <v-spacer></v-spacer>
             <v-btn
                     flat
-                    href="#"
-                    target="_blank"
+                    href=""
             >
 
                 <v-icon left>home</v-icon>
                     <span class="mr-2">HOME</span>
             </v-btn>
 
-            <v-btn
+            <v-btn class="hidden-sm-and-down"
                     flat
                     href="https://www.facebook.com/best.bossun"
                     target="_blank"
             >
-                <span class="mr-2">Facebook</span>
+                <span class="mr-2 hiddenline text-uppercase">Facebook</span>
             </v-btn>
         </v-toolbar>
         <v-navigation-drawer app v-model="drawer" class="black--text light-blue">

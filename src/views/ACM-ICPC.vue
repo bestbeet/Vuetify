@@ -1,28 +1,46 @@
 <template>
-    <div>
-        <h1 class="orange--text mt-5 ml-5"> ACM-ICPC Asia 2017 - (ICT) Mahidol University </h1>
-        <carousel-3d :width="600" :height="340" >
-            <slide :index="0" >
-                <img src = "../img/ACM-ICPC/ACM_1.jpg">
-            </slide>
-            <slide :index="1" >
-                <img src = "../img/ACM-ICPC/ACM_2.jpg">
-            </slide>
-            <slide :index="2" >
-                <img src = "../img/ACM-ICPC/ACM_3.jpg">
-            </slide>
-        </carousel-3d>
-    </div>
+    <v-container>
+        <v-layout pa-4>
+            <strong class="display-2 font-weight-black"> ACM-ICPC Asia 2017 - (ICT) Mahidol University </strong>
+        </v-layout>
+        <v-layout row warp pa-5>
+            <v-flex auto>
+                <v-carousel>
+                    <v-carousel-item
+                            v-for="(item,i) in items"
+                            :key="i"
+                            :src="item.src"
+                    ></v-carousel-item>
+                </v-carousel>
+            </v-flex>
+        </v-layout>
+    </v-container>
+
 </template>
 
 <script>
-    import {Carousel3d,Slide} from 'vue-carousel-3d'
+
     export default {
         name: "ACM-ICPC",
         components: {
-            Carousel3d,
-            Slide,
         },
+        data () {
+            return {
+                items: [
+                    {
+                        src : require('../img/ACM-ICPC/ACM_1.jpg'),
+                    },
+                    {
+                        src: require('../img/ACM-ICPC/ACM_2.jpg'),
+                    },
+                    {
+                        src: require('../img/ACM-ICPC/ACM_3.jpg')
+                    },
+
+                ]
+            }
+        }
+
     }
 </script>
 

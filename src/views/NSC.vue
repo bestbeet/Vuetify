@@ -3,7 +3,8 @@
         <v-layout colum>
             <v-flex class ="pa-2">
                 <img class = "nsclogo " src="../img/NSC/NSC-icon.png">
-                <h1>National Software Contest</h1>
+
+                <h1 class="pa-2">National Software Contest</h1>
             </v-flex>
         </v-layout>
         <v-layout row wrap>

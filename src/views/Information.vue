@@ -22,7 +22,7 @@
                         </tr>
                         <tr>
                             <th>Address : </th>
-                            <td>62/3 M.4 Khao Khao , Thung song , Nakhon Si Thammarat 80110 , Thailand </td>
+                            <td>62/3 M.4 Khao Khao , Thungsong , Nakhon Si Thammarat 80110 , Thailand </td>
                         </tr>
                         <tr>
                             <th>GitHub : </th>
