@@ -6,6 +6,8 @@
         </Experience>
         <Skill>
         </Skill>
+        <Achievement>
+        </Achievement>
         <Contact>
         </Contact>
     </v-container>
@@ -16,10 +18,14 @@
     import Skill from '../components/Skill'
     import Resume from '../components/Resume'
     import Experience from '../components/Experience'
+    import Apprentice from "./Apprentice";
+    import Achievement from "../components/Achievement";
     export default {
         name: 'Information',
         title: ' ',
         components: {
+            Achievement,
+            Apprentice,
             Resume,
             Skill,
             Contact,

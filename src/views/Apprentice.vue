@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1 class="orange--text mt-5 ml-5">competition</h1>
+        <h1 class="orange--text mt-5 ml-5">Competition</h1>
         <carousel-3d :width="600" :height="340" >
             <slide :index="0" >
             <img src = "../img/NSC/NSC_1.jpg">
@@ -18,12 +18,13 @@
                 <img src = "../img/ACM-ICPC/ACM_3.jpg">
             </slide>
         </carousel-3d>
-        <h1>Resume</h1>
+        <h1 class="black--text mt-5 ml-5">Resume</h1>
         <carousel-3d :width="820" :height="1050" >
             <slide :index="0" >
                 <img src = "../img/Resume.png">
             </slide>
         </carousel-3d>
+
 
     </div>
 </template>

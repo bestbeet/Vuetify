@@ -2,17 +2,12 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
 import Information from './views/Information'
-import Contact from './components/Contact'
-import Skill from './components/Skill'
+
 import Project from './views/Project'
 import NSC from './views/NSC'
 import Carousel3d from 'vue-carousel-3d'
 import ACMICPC from './views/ACM-ICPC'
 import Apprentice from './views/Apprentice'
-import Education from './components/Experience'
-
-import Resume from './components/Resume'
-
 
 Vue.use(Router,Carousel3d);
 
